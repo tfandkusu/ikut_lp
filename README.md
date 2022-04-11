@@ -1,2 +1,7 @@
 # ikut_lp
-iKutのLP
+
+## 環境構築
+
+```sh
+asdf install
+```
