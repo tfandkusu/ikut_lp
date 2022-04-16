@@ -10,7 +10,7 @@ npm install
 ## ローカルで閲覧する
 
 ```sh
-./node_modules/.bin/http-server
+node app.js
 ```
 
-http://localhost:8080/
+http://localhost:300/
