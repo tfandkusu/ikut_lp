@@ -14,3 +14,9 @@ node app.js
 ```
 
 http://localhost:300/
+
+## CSSを編集する
+
+```sh
+ node_modules/.bin/sass --watch style.sass static/style.css
+```
