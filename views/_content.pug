@@ -1,7 +1,7 @@
 header
-    .container.py-5
+    .container
         .row
-            .col-4
+            .col-4.py-5
                 p.h3.text-white 振り返りたいイカのための
                 p.h3.text-white 動画プレイヤーアプリ
                 h1.display-3.text-white iKut
@@ -16,36 +16,44 @@ header
                             h2.h5 for スプラトゥーン3
                         .card-text.text-muted
                             | 発売後、開発開始予定
-            .col-4
-                h3 タイムライン
-            .col-4
-                h3 スクリーンショット
+            .col-1
+            .col-2.align-self-center
+                img.w-100.shadow(src="timeline.png")
+            .col-5.align-self-end
+                img.w-100(src="app_screenshot.png")
 .container
+    .row.mt-5
+        .col-1
+        .col-5
+            h2.h3 録画をドラッグアンドドロップして使用開始
+            p.mt-4
+                | OBS等で録画したプレイ動画をドラッグアンドドロップして使います。
+                br
+                | お使いのPC内で処理が完結します。動画を他に送信しません。
+        .col-6
+            img.w-75.border.border-dark(src="drag_and_drop.png")
     .row.mt-4
+        .col-1
+        .col-5
+            h2.h3 重要シーンを自動で頭出し
+            | 試合の開始と終了、やられたシーンとたおしたシーンを画像認識を用いて自動で頭出しします。
+            br
+            | 例えば、やられたシーンを効率的に振り返ることが可能です。
         .col-6
-            h2 録画をドラッグアンドドロップして使用開始
-            p OBS等で録画した動画をドラッグアンドドロップして使います。
-            p お使いのPC内で処理が完結します。動画を他に送信しません。
+             img.w-50.border.border-dark(src="timeline_2.png")
+    .row.mt-4
+        .col-1
+        .col-5
+            h2.h3 スローモーションで振り返り
+            | ゲームスピードが速すぎて、対面の敗因がよく分からないときは、スローモーションで確認することができます。
         .col-6
-            h3 TODO ドラッグアンドドロップ動画
-    .row
-        .col-6
-            h2 シーンを自動で頭出し
-            ul
-                li 試合の開始
-                li 試合の終了
-                li やられた
-                li たおした
-        .col-6
-            h3 TODO 自動頭出しスクリーンショット
-    .row
-        .col-6
-            h2 スローモーションで振り返り
-            | 対面の敗因が速すぎてよく分からないときは、スローモーションで確認することができます。
-        .col-6
-            h2 試合の開始時間一覧をクリップボードにコピー
+    .row.mt-4
+        .col-1
+        .col-5
+            h2.h3 試合の開始時間一覧をクリップボードにコピー
             | YouTubeの概要欄に試合の開始時間を記載したいときは
             | iKutが自動生成した試合の開始時間一覧を使えます。
+        .col-6
 .footer.mt-4
     .border-bottom
     .container.my-4
