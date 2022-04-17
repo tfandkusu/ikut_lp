@@ -2,6 +2,10 @@ doctype html
 html(lang='ja')
 	head
 		meta(charset='UTF-8')
+		// Bootstrap
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(href="bootstrap.min.css" rel="stylesheet")
+		// Description
 		meta(name='description' content='スプラトゥーン2やられたシーン自動頭出しツール')
 		// iOS meta tags & icons
 		meta(name='apple-mobile-web-app-capable' content='yes')
@@ -22,4 +26,4 @@ html(lang='ja')
 		title iKut
 		link(rel='manifest' href='manifest.json')
 	body
-		| Hello World
+		include _content
