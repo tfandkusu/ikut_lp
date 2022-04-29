@@ -7,16 +7,25 @@ asdf install
 npm install
 ```
 
+## CSSをSassから変換する
+
+```sh
+node_modules/.bin/sass style.sass static/style.css
+```
+
+編集する場合は `--watch` フラグをつける
+
+```sh
+node_modules/.bin/sass --watch style.sass static/style.css
+```
+
 ## ローカルで閲覧する
 
 ```sh
 node app.js
 ```
 
-http://localhost:300/
+ブラウザで開く
 
-## CSSを編集する
+http://localhost:3000/
 
-```sh
- node_modules/.bin/sass --watch style.sass static/style.css
-```
