@@ -1,10 +1,10 @@
 header
     .container
         .row
-            .col-4.py-5
+            .col-md-5.py-5
                 p.h3.text-white 振り返りたいイカのための
                 p.h3.text-white 動画プレイヤーアプリ
-                h1.display-3.text-white iKut
+                h1.display-2.text-white iKut
                 .card.mt-4.shadow
                     .card-body
                         .card-title
@@ -16,36 +16,34 @@ header
                             h2.h5 for スプラトゥーン3
                         .card-text.text-muted
                             | 発売後、開発開始予定
-            .col-1
-            .col-2.align-self-center
-                img.w-100.shadow(src="timeline.png")
-            .col-5.align-self-end
+            .col-md-7.align-self-end
                 img.w-100(src="app_screenshot.png")
+.border-bottom
 .container
-    .row.mt-5
-        .col-6
+    .row
+        .col-md-6.mt-4
             h2.h3 録画をドラッグアンドドロップして使用開始
-            p.mt-4
+            p.mt-3
                 | OBS等で録画したプレイ動画をドラッグアンドドロップして使います。
                 br
                 | お使いのPC内で処理が完結します。動画を他に送信しません。
             img.w-75.border.border-dark(src="drag_and_drop.png")
-        .col-6
+        .col-md-6.mt-4
             h2.h3 重要シーンを自動で頭出し
-            p.mt-4
+            p.mt-3
                 | 試合の開始と終了、やられたシーンとたおしたシーンを画像認識を用いて自動で頭出しします。
                 br
                 | 例えば、やられたシーンを効率的に振り返ることが可能です。
             img.w-50.border.border-dark(src="timeline_2.png")
-    .row.mt-5
-        .col-6
+    .row
+        .col-md-6.mt-4
             h2.h3 スローモーションで振り返り
-            p.mt-4
+            p.mt-3
                 | ゲームスピードが速すぎて、対面の敗因がよく分からないときは、スローモーションで確認することができます。
             img.w-75.border.border-dark(src="slow.png")
-        .col-6
+        .col-md-6.mt-4
             h2.h3 試合の開始時間一覧をクリップボードにコピー
-            p.mt-4
+            p.mt-3
                 | YouTubeの概要欄に試合の開始時間を記載したいときは
                 | iKutが自動生成した試合の開始時間一覧を使えます。
             img.w-50.border.border-dark(src="clipboard.png")
