@@ -66,5 +66,40 @@ header
                     | 任天堂株式会社とは一切関係はございません。
         .row.mt-3
             .col-12.text-center
-                a.px-2 プライバシーポリシー
-                a.px-2 作者について
+                button.btn.btn-link.px-2(type="button", data-bs-toggle="modal", data-bs-target="#privacyPolicy") プライバシーポリシー
+                button.btn.btn-link.px-2(type="button", data-bs-toggle="modal", data-bs-target="#about") 作者について
+
+.modal#privacyPolicy
+    .modal-dialog
+        .modal-content
+            .modal-header
+                h2.h3.modal-title プライバシーポリシー
+                button.btn-close(type="button", data-bs-dismiss="modal", aria-label="閉じる")
+            .modal-body
+                | WebアプリiKutのプライバシーポリシーを以下のように定めます。
+                h3.h4.mt-4 個人情報の定義
+                | 「個人情報」とは、個人情報保護法にいう「個人情報」を指すものとし、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日、住所、電話番号、連絡先、プレイヤーネーム、プレイ動画、その他の記述等により特定の個人を識別できる情報を指します。
+                h3.h4.mt-4 個人情報の不収集
+                | 本アプリは読み込まれたプレイ動画を含め、個人情報を収集しません。
+                h3.h4.mt-4 アクセス解析ツールについて
+                | iKutではアプリの分析と改善のため、アクセス解析ツール「Firebase Analytics」を利用し統計情報を収集しています。統計情報は匿名で収集されており、個人を特定するものではありません。
+            .modal-footer
+                button.btn.btn-primary(type="button", data-bs-dismiss="modal") 閉じる
+
+.modal#about
+    .modal-dialog
+        .modal-content
+            .modal-header
+                h2.h3.modal-title 作者について
+                button.btn-close(type="button", data-bs-dismiss="modal", aria-label="閉じる")
+            .modal-body
+                p Haruhiko Takada
+                a(href="https://qiita.com/tfandkusu") https://qiita.com/tfandkusu
+                br
+                a(href="https://twitter.com/tfandkusu") https://twitter.com/tfandkusu
+                br
+                a(href="https://github.com/tfandkusu") https://github.com/tfandkusu
+                br
+                a(href="https://zenn.dev/tfandkusu") https://zenn.dev/tfandkusu
+            .modal-footer
+                button.btn.btn-primary(type="button", data-bs-dismiss="modal") 閉じる
