@@ -21,4 +21,4 @@ jobs:
       - run: node_modules/.bin/gulp pug
       - run: node_modules/.bin/sass -s compressed scss/bootstrap.scss static/style.css
       - run: cp static/* dist/
-      - run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }} --only hosting:staging
+      - run: firebase deploy --only hosting:staging --token ${{ secrets.FIREBASE_TOKEN }}
