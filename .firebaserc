@@ -5,7 +5,7 @@
   "targets": {
     "ikutapp": {
       "hosting": {
-        "stating": [
+        "staging": [
           "ikut-lp-staging"
         ]
       }
