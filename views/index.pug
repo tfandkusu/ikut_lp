@@ -28,8 +28,5 @@ html(lang='ja')
 		link(rel='manifest' href='manifest.json')
 	body
 		include _content
-		script(src="/__/firebase/8.10.1/firebase-app.js")
-		script(src="/__/firebase/8.10.1/firebase-analytics.js")
-		script(src="/__/firebase/init.js")
-		script
-			| firebase.analytics();
+		script(type="module")
+			include script.js
