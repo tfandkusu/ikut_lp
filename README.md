@@ -1,4 +1,8 @@
-# ikut_lp
+# iKutのランディングページ
+
+## デプロイ先
+
+https://ikut.app/
 
 ## 環境構築
 
