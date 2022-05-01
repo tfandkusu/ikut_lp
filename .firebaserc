@@ -7,6 +7,9 @@
       "hosting": {
         "staging": [
           "ikut-lp-staging"
+        ],
+        "release": [
+          "ikutapp"
         ]
       }
     }
