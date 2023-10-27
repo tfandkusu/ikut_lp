@@ -3,11 +3,6 @@ on:
   push:
     branches:
       - staging
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
 jobs:
   staging:
     runs-on: ubuntu-latest
